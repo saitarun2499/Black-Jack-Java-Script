@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="center">
+
+            <h1>Blackjack</h1>
+            <button class="button open-button">Rules</button>
+            <p id="message-el">Want to play a round?</p>
+            <p id="cards-el">Cards:</p>
+            <p id="sum-el">Sum:</p>
+            <button onclick="startGame()">START GAME</button>
+            <button onclick="newCard()">NEW CARD</button>
+            <button onclick="foo()">Confetti</button>
+            <p id="player-el"></p>
+            
+
+        </div>
+    </div>
+   
+  <dialog class="modal" id="modal">
+    <h2>Rules</h2>
+    <ul class="dialogue-text">
+        <li>
+            Click on "Start Button" to start the game(The System will pick 2 random cards for you)
+        </li>
+        <li>
+            Click on New Card to pick another card 
+        </li>
+        <li>
+            If the Sum equals to 21 you will get Blackjack. Click on Start Game to start a new game.
+        </li>
+        <li>
+            Click on Confetti button for a fun confetti(Not a rule tho)
+        </li>
+        
+    </ul>
+    <button class="button close-button">close modal</button>
+  </dialog>
+  
+  <script src="index.js"></script>
+  <script src="confetti.js" type="module"></script>
+</body>
+
+</html>
